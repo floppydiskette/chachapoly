@@ -93,7 +93,7 @@ chacha_encrypt_bytes(struct chacha_ctx *x,const unsigned char *m,unsigned char *
   uint32_t j0, j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15;
   unsigned char *ctarget = NULL;
   unsigned char tmp[64];
-  u_int i;
+  size_t i;
 
   if (!bytes) return;
 
